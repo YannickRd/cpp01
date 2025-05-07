@@ -7,10 +7,6 @@ HumanA::HumanA(std::string given_name, Weapon& given_weapon) :
 {
 }
 
-HumanA::~HumanA(void)
-{
-}
-
 std::string HumanA::getName(void)
 {
     return (this->name);
@@ -24,11 +20,6 @@ void        HumanA::setName(std::string given_name)
 Weapon& HumanA::getWeapon(void)
 {
     return (this->weapon);
-}
-
-void        HumanA::setWeapon(std::string)
-{
-
 }
 
 void        HumanA::attack(void)

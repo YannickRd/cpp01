@@ -6,10 +6,6 @@ HumanB::HumanB(std::string given_name) : name(given_name), weapon(NULL)
 {
 }
 
-HumanB::~HumanB(void)
-{
-}
-
 std::string HumanB::getName(void)
 {
     return (this->name);

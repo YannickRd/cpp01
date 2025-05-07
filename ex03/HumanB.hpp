@@ -12,12 +12,14 @@ class   HumanB
 {
     public:
         HumanB(std::string);
-        ~HumanB(void);
+
         std::string getName(void);
         void        setName(std::string);
         Weapon*     getWeapon(void);
         void        setWeapon(Weapon&);
+
         void        attack(void);
+
     private:
         std::string name;
         Weapon*     weapon;
