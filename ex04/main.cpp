@@ -15,7 +15,7 @@ int main(int argc, char* argv[])
     std::ifstream   ifs(file_name.c_str());
     if (!ifs.is_open())
     {
-        std::cerr << "Error: Could not open file " << file_name << std::endl;
+        std::cerr << "Error: could not open file " << file_name << std::endl;
         return (3);
     }
     std::string     temp_buffer;
@@ -33,12 +33,11 @@ int main(int argc, char* argv[])
         temp_buffer.erase(pos, s1.length());
         temp_buffer.insert(pos, s2);
     }
-    std::string outFilename = file_name + ".replace";
-    std::ofstream   ofs(outFilename.c_str());
+    std::string outfile_name = file_name + ".replace";
+    std::ofstream   ofs(outfile_name.c_str());
     if (!ofs.is_open())
     {
-        std::cerr   << "Error: Could not create output file " 
-                    << outFilename << std::endl;
+        std::cerr   << "Error: output file couldn't be created" << std::endl;
         return (4);
     }
     ofs << temp_buffer;
