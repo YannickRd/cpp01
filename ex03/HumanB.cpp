@@ -2,7 +2,7 @@
 
 #include "HumanB.hpp"
 
-HumanB::HumanB(std::string given_name) : name(given_name)
+HumanB::HumanB(std::string given_name) : name(given_name), weapon(NULL)
 {
 }
 
@@ -22,16 +22,16 @@ void        HumanB::setName(std::string given_name)
 
 Weapon*     HumanB::getWeapon(void)
 {
-
+    return (this->weapon);
 }
 
-void        HumanB::setWeapon(Weapon given_weapon)
+void        HumanB::setWeapon(Weapon& given_weapon)
 {
-
+    this->weapon = &given_weapon;
 }
 
 void        HumanB::attack(void)
 {
     std::cout   << this->getName() << " attacks with their "
-                << this->getWeapon() << std::endl;
+                << this->getWeapon()->getType() << std::endl;
 }

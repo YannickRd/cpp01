@@ -16,11 +16,11 @@ class   HumanB
         std::string getName(void);
         void        setName(std::string);
         Weapon*     getWeapon(void);
-        void        setWeapon(Weapon);
+        void        setWeapon(Weapon&);
         void        attack(void);
     private:
         std::string name;
-        std::string weapon;
+        Weapon*     weapon;
 };
 
 #endif
