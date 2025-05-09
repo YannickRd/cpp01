@@ -5,15 +5,15 @@
 
 # include <string>
 
-class   Weapon
+class Weapon
 {
-    public:
-        Weapon(std::string provided_weapon);
-        const std::string&  getType(void);
-        void                setType(std::string);
+	public:
+		Weapon(std::string	provided_weapon);
+		const std::string&	getType(void);
+		void				setType(std::string);
 
-    private:
-        std::string type;
+	private:
+		std::string			type;
 };
 
 #endif

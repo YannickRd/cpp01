@@ -8,6 +8,6 @@
 # include <fstream>
 # include <sstream>
 
-void    exit_if_args_errors(int argc, char* argv[]);
+void	exit_if_args_errors(int argc, char* argv[]);
 
 # endif

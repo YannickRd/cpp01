@@ -3,26 +3,26 @@
 #ifndef HUMANB_HPP
 # define HUMANB_HPP
 
-#include "Weapon.hpp"
+# include "Weapon.hpp"
 
-#include <string>
-#include <iostream>
+# include <string>
+# include <iostream>
 
 class   HumanB
 {
-    public:
-        HumanB(std::string);
+	public:
+		HumanB(std::string);
 
-        std::string getName(void);
-        void        setName(std::string);
-        Weapon*     getWeapon(void);
-        void        setWeapon(Weapon&);
+		std::string	getName(void);
+		void		setName(std::string);
+		Weapon*		getWeapon(void);
+		void		setWeapon(Weapon&);
 
-        void        attack(void);
+		void		attack(void);
 
-    private:
-        std::string name;
-        Weapon*     weapon;
+	private:
+		std::string	name;
+		Weapon*		weapon;
 };
 
 #endif
