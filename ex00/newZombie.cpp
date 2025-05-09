@@ -3,10 +3,10 @@
 #include "Zombie.hpp"
 #include <new>
 
-Zombie* newZombie( std::string name )
+Zombie *newZombie(std::string name)
 {
-    Zombie*  MyZombie_p = new Zombie(name);
+	Zombie *MyZombie_p = new Zombie(name);
 
-    MyZombie_p->announce();
-    return (MyZombie_p);
+	MyZombie_p->announce();
+	return (MyZombie_p);
 }

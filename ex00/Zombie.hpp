@@ -6,19 +6,19 @@
 # include <string>
 # include <iostream>
 
-class   Zombie
+class Zombie
 {
-    public:
-    Zombie( std::string );
-    ~Zombie( void );
+public:
+	Zombie(std::string);
+	~Zombie(void);
 
-    std::string getName( void ) const;
-    void        setName( std::string const& );
+	std::string getName(void) const;
+	void setName(std::string const &);
 
-    void        announce( void );
+	void announce(void);
 
-    private:
-        std::string name;
+private:
+	std::string name;
 };
 
 #endif

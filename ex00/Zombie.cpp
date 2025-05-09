@@ -4,29 +4,28 @@
 
 #include <iostream>
 
-Zombie::Zombie( std::string given_name ) : name(given_name)
+Zombie::Zombie(std::string given_name) : name(given_name)
 {
- 
 }
 
-Zombie::~Zombie( void )
+Zombie::~Zombie(void)
 {
-    std::cout   << "Destructor called: "<<this->name << ' ' 
-                << "has been destructed" << std::endl;
+	std::cout << "Destructor called: " << this->name << ' '
+			  << "has been destructed" << std::endl;
 }
 
-std::string Zombie::getName( void ) const
+std::string Zombie::getName(void) const
 {
-    return (this->name);
+	return (this->name);
 }
 
-void    Zombie::setName( std::string const& given_name )
+void Zombie::setName(std::string const &given_name)
 {
-    this->name = given_name;
+	this->name = given_name;
 }
 
-void    Zombie::announce( void )
+void Zombie::announce(void)
 {
-    std::cout   << getName() << ": " << "BraiiiiiiinnnzzzZ..."
-                << std::endl;
+	std::cout << getName() << ": " << "BraiiiiiiinnnzzzZ..."
+			  << std::endl;
 }

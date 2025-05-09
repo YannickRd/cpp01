@@ -19,12 +19,12 @@ CPP_COMPILER = c++
 CPP_FLAGS = -Wall -Wextra -Werror $(DEBUG_FLAG) $(STANDARD_FLAG) 
 
 SOURCE_FILES = main.cpp \
-               newZombie.cpp \
-               randomChump.cpp	\
-               Zombie.cpp
+			newZombie.cpp \
+			randomChump.cpp \
+			Zombie.cpp
 
 HEADER_FILES = main.hpp \
-               Zombie.hpp
+			Zombie.hpp
 
 OBJECT_FILES = $(patsubst %.cpp, %.o, $(SOURCE_FILES))
 

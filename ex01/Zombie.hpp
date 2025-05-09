@@ -8,15 +8,15 @@
 
 class Zombie
 {
-    public:
-        Zombie(void);
-        ~Zombie(void);
-        std::string getName(void);
-        void        setName(std::string const);
-        void        announce(void);
+	public:
+		Zombie(void);
+		~Zombie(void);
+		std::string	getName(void);
+		void		setName(std::string const);
+		void		announce(void);
 
-    private:
-        std::string name;
+	private:
+		std::string	name;
 };
 
 #endif

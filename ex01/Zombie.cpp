@@ -2,29 +2,28 @@
 
 #include "Zombie.hpp"
 
-Zombie::Zombie( void )
+Zombie::Zombie(void)
 {
-
 }
 
-Zombie::~Zombie( void )
+Zombie::~Zombie(void)
 {
-    std::cout   << "Destructor called: "<<this->name << ' ' 
-                << "has been destructed" << std::endl;
+	std::cout << "Destructor called: " << this->name << ' '
+			  << "has been destructed" << std::endl;
 }
 
-std::string Zombie::getName( void )
+std::string Zombie::getName(void)
 {
-    return (this->name);
+	return (this->name);
 }
 
-void    Zombie::setName( std::string const given_name )
+void Zombie::setName(std::string const given_name)
 {
-    this->name = given_name;
+	this->name = given_name;
 }
 
-void    Zombie::announce( void )
+void Zombie::announce(void)
 {
-    std::cout   << getName() << ": " << "BraiiiiiiinnnzzzZ..."
-                << std::endl;
+	std::cout << getName() << ": " << "BraiiiiiiinnnzzzZ..."
+			  << std::endl;
 }

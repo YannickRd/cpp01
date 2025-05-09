@@ -1,14 +1,31 @@
+STANDARD ?= 0
+DEBUG ?= 0
+
 NAME = main
 
 CPP_COMPILER = c++
-CPP_FLAGS = -Wall -Wextra -Werror
+CPP_FLAGS = -Wall -Wextra -Werror $(EXTRA_FLAGS)
+
+EXTRA_FLAGS = $(DEBUG_FLAG) $(STANDARD_FLAG)
 
 SOURCE_FILES = main.cpp \
-               Zombie.cpp \
-			   zombieHorde.cpp
+			Zombie.cpp \
+			zombieHorde.cpp
 HEADER_FILES = main.hpp \
-               Zombie.hpp
+			Zombie.hpp
 OBJECT_FILES = $(patsubst %.cpp, %.o, $(SOURCE_FILES))
+
+ifeq ($(STANDARD), 0)
+STANDARD_FLAG =
+else
+STANDARD_FLAG = -std=c++98
+endif
+
+ifeq ($(DEBUG), 0)
+DEBUG_FLAG =
+else
+DEBUG_FLAG = -g
+endif
 
 all: $(NAME)
 
