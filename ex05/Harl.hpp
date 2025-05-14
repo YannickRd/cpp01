@@ -15,7 +15,7 @@ class Harl
 
 	private:
 		std::string	levels[4];
-		void		(Harl::*functions[4])(void);
+		void (Harl::*functions[4])(void);
 
 		void		debug(void);
 		void		info(void);

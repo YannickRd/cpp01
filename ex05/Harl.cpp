@@ -4,15 +4,15 @@
 
 Harl::Harl(void)
 {
-	Harl::levels[0] = "DEBUG";
-	Harl::levels[1] = "INFO";
-	Harl::levels[2] = "WARNING";
-	Harl::levels[3] = "ERROR";
+	levels[0] = "DEBUG";
+	levels[1] = "INFO";
+	levels[2] = "WARNING";
+	levels[3] = "ERROR";
 
-	Harl::functions[0] = &Harl::debug;
-	Harl::functions[1] = &Harl::info;
-	Harl::functions[2] = &Harl::warning;
-	Harl::functions[3] = &Harl::error;
+	functions[0] = &Harl::debug;
+	functions[1] = &Harl::info;
+	functions[2] = &Harl::warning;
+	functions[3] = &Harl::error;
 }
 
 void Harl::complain(std::string level)
