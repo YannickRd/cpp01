@@ -24,10 +24,12 @@ SOURCE_FILES = main.cpp \
 			HumanA.cpp \
 			HumanB.cpp \
 			Weapon.cpp
+
 HEADER_FILES = main.hpp \
 			HumanA.hpp \
 			HumanB.hpp \
 			Weapon.hpp
+
 OBJECT_FILES = $(patsubst %.cpp,%.o,$(SOURCE_FILES))
 
 all: $(NAME)
