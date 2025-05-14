@@ -4,10 +4,10 @@
 
 Harl::Harl(void)
 {
-	Harl::levels[0] = "debug";
-	Harl::levels[1] = "info";
-	Harl::levels[2] = "warning";
-	Harl::levels[3] = "error";
+	Harl::levels[0] = "DEBUG";
+	Harl::levels[1] = "INFO";
+	Harl::levels[2] = "WARNING";
+	Harl::levels[3] = "ERROR";
 
 	Harl::functions[0] = &Harl::debug;
 	Harl::functions[1] = &Harl::info;
@@ -30,7 +30,7 @@ void Harl::complain(std::string level)
 void Harl::debug(void)
 {
 	std::cout << "Debug messages contain contextual information. "
-			  << "They are mostly used for problem diagnosis"
+			  << "They are mostly used for problem diagnosis."
 			  << std::endl;
 }
 
