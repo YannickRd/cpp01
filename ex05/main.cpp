@@ -11,5 +11,6 @@ int	main(void)
 	harl_instance.complain("warning");
 	harl_instance.complain("error");
 	harl_instance.complain("gfwskljhjkl");
+	harl_instance.complain("");
 	return (0);
 }

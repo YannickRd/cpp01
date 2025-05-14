@@ -20,9 +20,11 @@ void Harl::complain(std::string level)
 	int	i = 0;
 	for (; i < 4; i++)
 		if (level == Harl::levels[i])
+		{
 			(this->*Harl::functions[i])();
-	if (i >= 4)
-		std::cout << "Error: wrong input" << std::endl;
+			return ;
+		}
+	std::cout << "Error: wrong input" << std::endl;
 }
 
 void Harl::debug(void)
