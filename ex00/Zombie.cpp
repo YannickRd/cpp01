@@ -11,7 +11,7 @@ Zombie::Zombie(std::string given_name) : name(given_name)
 Zombie::~Zombie(void)
 {
 	std::cout << "Destructor called: " << this->name << ' '
-			  << "has been destructed" << std::endl;
+			  << "has been destroyed" << std::endl;
 }
 
 std::string Zombie::getName(void) const
